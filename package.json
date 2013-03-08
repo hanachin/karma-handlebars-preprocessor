@@ -1,0 +1,26 @@
+{
+  "name": "testacular-handlebars-preprocessor",
+  "version": "0.0.1",
+  "description": "A Testacular plugin. Compile handlebars template on the fly.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hanachin/testacular-handlebars-preprocessor.git"
+  },
+  "keywords": [
+    "testacular-plugin",
+    "preprocessor",
+    "coffee"
+  ],
+  "author": "Vojta Jina <vojta.jina@gmail.com>",
+  "dependencies": {
+    "handlebars": "1.0.10"
+  },
+  "peerDependencies": {
+    "testacular": "~0.7"
+  },
+  "license": "MIT"
+}
