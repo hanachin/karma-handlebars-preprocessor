@@ -1,17 +1,17 @@
 {
-  "name": "testacular-handlebars-preprocessor",
+  "name": "karma-handlebars-preprocessor",
   "version": "0.0.1",
-  "description": "A Testacular plugin. Compile handlebars template on the fly.",
+  "description": "A Karma plugin. Compile handlebars template on the fly.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hanachin/testacular-handlebars-preprocessor.git"
+    "url": "git://github.com/hanachin/karma-handlebars-preprocessor.git"
   },
   "keywords": [
-    "testacular-plugin",
+    "karma-plugin",
     "preprocessor",
     "coffee"
   ],
@@ -20,7 +20,7 @@
     "handlebars": "1.0.10"
   },
   "peerDependencies": {
-    "testacular": "~0.7"
+    "karma": "~0.9"
   },
   "license": "MIT"
 }
