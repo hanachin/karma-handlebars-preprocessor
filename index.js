@@ -9,10 +9,15 @@ var createHandlebarsPreprocessor = function(logger, basePath) {
     log.debug('Processing "%s".', file.originalPath);
     file.path = file.originalPath.replace(/\.hbs$/, '.js');
 
-    var templateName = file.originalPath.replace(/^.*\/([^\/]+)\.hbs$/, '$1');
+    log.error(file.originalPath);
+    var templateName = file.originalPath.replace(/^.*javascripts\/(.*)\.hbs$/, '$1');
+    log.error(templateName);
 
     try {
-      processed = "(function() {var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};"
+      processed = "(function() {"+
+        "var template = Handlebars.template;"+
+        "window.HandlebarsTemplates = window.HandlebarsTemplates || {};"+
+        "var templates = HandlebarsTemplates;"
       + "templates['" + templateName + "'] = template("
       + handlebars.precompile(content)
       + ");})();";
